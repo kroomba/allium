@@ -5,8 +5,6 @@ CONTROLS: Use arrow keys to move. Press Z to interact with NPCs/progress dialogu
 
 SPECIAL KEYS: Use the + and - keys to adjust volume accordingly. Press N to toggle Noise effect. Hold X to speed up dialogue.
 
-LAUNCHING THE GAME: Run the exe file in the x64 folder. If Windows tells you not to run it, click 'more' and then click 'run anyway.'
-
 
 Changelog: 
 
