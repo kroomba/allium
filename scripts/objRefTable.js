@@ -141,7 +141,8 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Cnds.IsOverlappingOffset,
 		C3.Behaviors.EightDir.Acts.SetVectorY,
 		C3.Plugins.Sprite.Acts.SetSize,
-		C3.Plugins.Sprite.Exps.Height
+		C3.Plugins.Sprite.Exps.Height,
+		C3.Plugins.Sprite.Acts.MoveToBottom
 	];
 };
 self.C3_JsPropNameTable = [
@@ -320,7 +321,6 @@ self.C3_JsPropNameTable = [
 	{Tilemap: 0},
 	{Warp: 0},
 	{sweetSand: 0},
-	{WcDonaldsBKG: 0},
 	{feathers: 0},
 	{FurryWorldBKG: 0},
 	{AlliumPic: 0},
@@ -331,7 +331,6 @@ self.C3_JsPropNameTable = [
 	{darkgradient: 0},
 	{arcade: 0},
 	{REDDEATH: 0},
-	{original: 0},
 	{deltaexplosion: 0},
 	{ElyssaRoomBKG: 0},
 	{catbed: 0},
@@ -351,6 +350,7 @@ self.C3_JsPropNameTable = [
 	{LaserLine2: 0},
 	{Particles2: 0},
 	{knive: 0},
+	{furryPillars: 0},
 	{noise: 0},
 	{mastervolume: 0},
 	{GameOverQuote: 0},
@@ -638,7 +638,6 @@ self.InstanceType = {
 	Tilemap: class extends self.ITilemapInstance {},
 	Warp: class extends self.ISpriteInstance {},
 	sweetSand: class extends self.IParticlesInstance {},
-	WcDonaldsBKG: class extends self.ISpriteInstance {},
 	feathers: class extends self.IParticlesInstance {},
 	FurryWorldBKG: class extends self.ISpriteInstance {},
 	AlliumPic: class extends self.ISpriteInstance {},
@@ -649,7 +648,6 @@ self.InstanceType = {
 	darkgradient: class extends self.ISpriteInstance {},
 	arcade: class extends self.ISpriteInstance {},
 	REDDEATH: class extends self.ISpriteInstance {},
-	original: class extends self.ISpriteInstance {},
 	deltaexplosion: class extends self.ISpriteInstance {},
 	ElyssaRoomBKG: class extends self.ISpriteInstance {},
 	catbed: class extends self.ISpriteInstance {},
@@ -668,5 +666,6 @@ self.InstanceType = {
 	toilet: class extends self.ISpriteInstance {},
 	LaserLine2: class extends self.ISpriteInstance {},
 	Particles2: class extends self.IParticlesInstance {},
-	knive: class extends self.ISpriteInstance {}
+	knive: class extends self.ISpriteInstance {},
+	furryPillars: class extends self.ISpriteInstance {}
 }

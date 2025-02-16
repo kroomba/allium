@@ -1868,6 +1868,7 @@ self.C3_ExpressionFuncs = [
 			const n0 = p._GetNode(0);
 			return () => n0.ExpObject();
 		},
+		() => "Walking",
 		() => 23,
 		() => "Well, I suppose we will have to continue on our own.",
 		() => 24,
@@ -2319,7 +2320,7 @@ self.C3_ExpressionFuncs = [
 		() => "ALLIUM: I don't have anxiety.",
 		() => "???: Or like, your trauma.",
 		() => "ALLIUM: Nope, I think you've got the wrong address.",
-		() => "???: Do I look like I have the wrong address?",
+		() => "STRANGE CLONE: Do I look like I have the wrong address?",
 		() => "I am MALLIUM, the dark edgy emo ghost of your haunting past!!",
 		() => "ALLIUM: Listen, I'm perfectly fine. I don't need you to preach to me about my mental health.",
 		() => "MALLIUM: shut up and be relatable",
@@ -2370,7 +2371,7 @@ self.C3_ExpressionFuncs = [
 		() => "PlayerMovement24",
 		() => "FurryWorldCutscene",
 		() => "ELYSSA: Well. This sure is a place.",
-		() => "ALLIUM: This is definitely one of the IDEAL WORLDS of all time.",
+		() => "ALLIUM: Is that... a giant canvas of furry art google search results?",
 		() => "HUXLEY: YOU GOT A PROBLEM WITH FURRIES, HUH?",
 		() => "ELYSSA: What noooooooooo",
 		() => "CribNPC7",
@@ -2577,6 +2578,7 @@ self.C3_ExpressionFuncs = [
 		() => "*why r u causng a ruckus in thjs funny resturant.",
 		() => "ALLIUM: I'll do you one better, funny man.",
 		() => "Why are you serving hot sauce packets at McDonalds?",
+		() => "*...",
 		() => "*this ismt mcdonalbs, its wcdombals.:",
 		() => "ALLIUM: Go take it up with your manager.",
 		() => "* i am the manager.",
@@ -5872,13 +5874,33 @@ self.C3_ExpressionFuncs = [
 		() => "noisecontrol153",
 		() => "VolumeControl53",
 		() => "Character Portraits ",
+		p => {
+			const f0 = p._GetNode(0).GetBoundMethod();
+			const n1 = p._GetNode(1);
+			return () => f0(n1.ExpObject(), "STRANGE CLONE:");
+		},
 		() => "Character Portraits 4",
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
 			const n1 = p._GetNode(1);
 			return () => f0(n1.ExpObject(), "DOUG:");
 		},
-		() => "Akumu2"
+		() => "Akumu2",
+		p => {
+			const n0 = p._GetNode(0);
+			const n1 = p._GetNode(1);
+			return () => ((n0.ExpObject() / 2) + (n1.ExpObject() * 0.18));
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => ((n0.ExpObject() / 2) + 9);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => (n0.ExpObject() / 2);
+		},
+		() => "Interactive",
+		() => "Player"
 ];
 
 
