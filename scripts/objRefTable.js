@@ -136,6 +136,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Behaviors.Bullet.Cnds.OnStep,
 		C3.Plugins.TiledBg.Acts.SetDefaultColor,
 		C3.Plugins.Spritefont2.Acts.SetDefaultColor,
+		C3.Behaviors.Bullet.Acts.SetBounceOffSolids,
 		C3.Behaviors.Bullet.Acts.SetAcceleration,
 		C3.Behaviors.Bullet.Exps.Acceleration,
 		C3.Plugins.Sprite.Cnds.IsOverlappingOffset,
