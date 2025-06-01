@@ -12,7 +12,7 @@ Changelog:
 
 Version 0.345 - This is the final iteration of Allium Asylum's "free" version. So if you're reading this, you have quite the exclusive
 look at the game... don't ruin it for anyone
-- Updated Vol. 3 music tracks. Certain instruments were placeholders so I updated those. 
+- Updated Vol. 3 music tracks. Certain instruments in certain songs were placeholders so I updated those.
 - Aside from that... see you when Vol. 1 Official Demo launches later this year...
 
 Version 0.34 - Fixing everything i broke in the Volume 1 Facelift Update
